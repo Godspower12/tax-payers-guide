@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    /* media queries */
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+    }
+    
+  }

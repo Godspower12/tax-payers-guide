@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  margin-top: -22px;
+  color: white;
+  background-color: #1A202C;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-text {
+  margin-left: 5%;
+}
+.header-text h1{
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+ font-weight: bold;
+ margin-right: -10%;
+ margin-left: 1%;
+ margin-top: 5px;
+ cursor: pointer;
+ margin-bottom: 10px;
+ max-width: 95%;
+}
+
+
+
+@media (max-width : 800px) {
+ .menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+ }
+ 
+}
+ .intro {
+  max-width: 65%;
+}
+.menu p {
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ padding: 0px 20px;
+ align-items: center;
+ margin-top: 0px;
+ color: black;
+}
+.menu p:hover {
+ color: rgb(67, 67, 189);
+ text-decoration: underline;
+}
+
+.intro-header, .onboarding-header, 
+.annualReturns-header,
+.monthlySchedule-header,
+.withHoldingTax-header,
+.paymentOption-header {
+  color:  white;
+  background-color: #1A202C;
+  padding: 10px;
+}
+.intro-header-text, .onboarding-header-text,
+.annualReturns-header-text,
+.monthlySchedule-header-text,
+.withHoldingTax-header-text,
+.paymentOption-header-text {
+  margin-left: 5%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.intro-header-text p, .onboarding-header-text p, .annualReturns-header-text P,
+.monthlySchedule-header-text p,
+.withHoldingTax-header-text p,
+.paymentOption-header-text p {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  
+}
+
+.intro-content,
+ .onbarding-content,
+ .annualReturns-content, 
+ .monthlySchedule-contents,
+ .withHoldingTax-contents,
+ .paymentOption-content {
+  margin: 5%;
+}
+.intro-content h5, .onbarding-content h5,
+.annualReturns-content h5,
+.monthlySchedule-contents h5, 
+.withHoldingTax-contents h5,
+.paymentOption-content h5 {
+  font-size: large;
+  font-weight: bold;
+}
+.intro-content P, .onbarding-content P, 
+.annualReturns-content P,
+.monthlySchedule-contents P, 
+.withHoldingTax-contents P,
+.paymentOption-content p {
+  font-weight: bold;
+}
+.intro-content li, 
+.monthlySchedule-contents li,
+.withHoldingTax-contents li,
+.paymentOption-content li  {
+  font-weight: bold;
+  color: black;
+}
+ a {
+  text-decoration: none;
+}
+.intro-content img, .onbarding-content img, 
+.annualReturns-content img, 
+.monthlySchedule-contents img, 
+.withHoldingTax-contents img,
+.paymentOption-content img {
+  /* margin: 10%; */
+  max-width: 100%;
+  margin-left: -1%;
+  margin-top: -10px;
+  margin-bottom: 5%;
+}
+
