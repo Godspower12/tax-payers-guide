@@ -44,5 +44,7 @@
     ]
   },
   "homepage": "https://godspower12.github.io/tax-payers-guide/",
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
