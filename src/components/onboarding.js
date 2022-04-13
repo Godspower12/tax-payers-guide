@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom"
-
+import Onboard from '../images/ONBOARDING/ONBOARD.png';
+import Startup from '../images/ONBOARDING/Startup.png';
+import Validation from '../images/ONBOARDING/validation.PNG';
+import Login from '../images/ONBOARDING/Login.png';
+import Dashboard from '../images/dashboard.PNG';
 const Onboarding = () => {
     return (
         <div>
@@ -46,7 +50,7 @@ const Onboarding = () => {
           <p>For first time users with a TIN number click on SIGNUP on the home page.
           </p>
 
-          <img src="images/ONBOARDING/ONBOARD.png" alt=""></img>
+          <img src={Onboard} alt="onboard"></img>
 
 
           <p>
@@ -55,16 +59,16 @@ const Onboarding = () => {
             phone number /
             email linked to the TIN number provided.
           </p>
-          <img src="images/ONBOARDING/Startup.png" alt="Onboarding-startup.jpg"></img>
+          <img src={Startup} alt="startup"></img>
           <p>
             On the validation page, enter the token sent to you, set password, click turing, accept terms and condition
             then click on
             GET STARTED.
           </p>
-          <img src="images/ONBOARDING/validation.PNG" alt="Validation-img"></img>
+          <img src= {Validation} alt="Validation"></img>
          
           <p> Successful onboarding redirects you to your dashboard.</p>
-          <img src="images/dashboard.PNG" alt="dashboard-img"></img>
+          <img src= {Dashboard} alt="dashboard"></img>
 
           <h5>
             LOGIN</h5>
@@ -73,7 +77,7 @@ const Onboarding = () => {
             captcha and
             click on LOGIN.
           </p>
-          <img src="images/ONBOARDING/Login.png" alt=""></img>
+          <img src={Login} alt="login"></img>
 
           <p>
             Successful login redirects you to your dashboard.</p>

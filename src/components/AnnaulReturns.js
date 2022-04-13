@@ -1,5 +1,9 @@
-import React from 'react'
-
+import FileReturns from '../images/fileReturns.png';
+import AnnualPAYE from '../images/ANNUAL/annualPAYE.png';
+import AnnualUpload from '../images/ANNUAL/annualUpload.png';
+import viewAnnualRet from '../images/ANNUAL/viewAnnualRet.png';
+import viewAnnualPaye from '../images/ANNUAL/viewAnnualPaye.png';
+import Dashboard from '../images/dashboard.PNG';
 const AnnaulReturns = () => {
     return (
         <div>
@@ -16,12 +20,12 @@ const AnnaulReturns = () => {
   
     <h5>UPLOAD</h5>
         <p>click on the FILE RETURNS button on the side menu.</p>
-        <img src="images/FILE RETURN.png" alt=""></img>
+        <img src= {FileReturns} alt="fileReturns"/>
 
 
         <p>Buttons are provided to file and view on the upload and view page. Click on UPLOAD ANNUAL PAYE
           RETURNS to upload your schedule. </p>
-        <img src="images/ANNUAL/Annual PAYE.png" alt=""></img>
+        <img src={AnnualPAYE} alt="annualPAYE"/>
 
         <p>
           On the upload annual PAYE returns page, there are options to:
@@ -44,7 +48,7 @@ const AnnaulReturns = () => {
         <p>
           After choosing the correct file click on UPLOAD.
         </p>
-        <img src="images/ANNUAL/ANNUAL UPLOAD.png" alt=""></img>
+        <img src={AnnualUpload} alt="annualUpload"/>
 
 
         <p>
@@ -54,16 +58,16 @@ const AnnaulReturns = () => {
         </p>
 
 
-        <img src="logos/up_annual.PNG" alt=""></img>
+        <img src= {Dashboard} alt="logo"/>
 
         <h5>VIEW</h5>
         <p>
           To view annual PAYE returns uploaded, simply click on VIEW ANNUAL PAYE RETURNS.
         </p>
-        <img src="images/ANNUAL/View annual paye.png" alt=""></img>
+        <img src={viewAnnualRet} alt="viewAnnualRet"/>
 
         <p>Select year and click SEARCH.</p>
-        <img src="images/ANNUAL/view annual  return.png" alt=""></img>
+        <img src= {viewAnnualPaye} alt="viewAnnualPaye"/>
 
     </div>            
     </div>

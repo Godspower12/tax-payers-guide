@@ -1,3 +1,9 @@
+import FileReturns from '../images/fileReturns.png';
+import MonthlyRemittance from '../images/MONTHLY/MonthlyRemittance.png';
+import SearchMonthly from '../images/MONTHLY/searchMonthly.png';
+import UploadMonthlyRemittance from '../images/MONTHLY/uploadMonthlyRemittance.png';
+import ViewMonthlyRemittance from '../images/MONTHLY/viewMonthlyRemittance.png';
+
 const MonthlySchedule = () => {
     return (
         <div>
@@ -11,11 +17,11 @@ const MonthlySchedule = () => {
          <div className = "monthlySchedule-contents">
          <h5>UPLOAD</h5>
         <p>To Upload monthly PAYE remittance schedule, click on the FILE RETURNS button on the side menu bar.</p>
-        <img src="images/FILE RETURN.png" alt=""></img>
+        <img src= {FileReturns} alt="fileReturns"/>
 
 
         <p> Click on UPLOAD MONTHLY PAYE REMITTANCE SCHEDULE on the upload/view page.</p>
-        <img src="images/MONTHLY/Monthly remittance .png" alt="MonthlyRemittance-img"></img>
+        <img src= {MonthlyRemittance} alt="MonthlyRemittance-img"></img>
 
         <p>On the upload monthly PAYE remittance schedule page, there are buttons to:
         <ul>
@@ -35,18 +41,18 @@ const MonthlySchedule = () => {
         <p>
           After choosing the correct file, click on UPLOAD.
         </p>
-        <img src="images/MONTHLY/upload monthly remittance.png" alt=""></img>
+        <img src= {UploadMonthlyRemittance} alt="uploadMonthlyRemittance"></img>
 
 
 
 
         <h5>VIEW</h5>
         <p>To view monthly PAYE remittance schedule uploaded, simply click on VIEW monthly PAYE remittance schedule.</p>
-        <img src="images/MONTHLY/view monthly remittance.png" alt=""></img>
+        <img src= {ViewMonthlyRemittance} alt="Vie wMonthlyRemittance"></img>
 
         <p>Select year, month and click on SEARCH.</p>
         
-        <img src="images/MONTHLY/search monthly.png" alt=""></img>
+        <img src= {SearchMonthly} alt="SearchMonthly"></img>
          </div>
         </div>
     )

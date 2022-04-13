@@ -1,3 +1,9 @@
+import fileReturns from '../images/fileReturns.png';
+import uploadWht from '../images/WHT/UploadWHT.png';
+import uploadMonthlywht from '../images/WHT/uploadMonthlyWHT.PNG';
+import viewWHT from '../images/WHT/viewWHT.png';
+import whtSearch from '../images/WHT/whtSearch.png';
+
 const withHoldingTax = () => {
     return (
         <div>
@@ -11,10 +17,10 @@ const withHoldingTax = () => {
 
             <h5>UPLOAD</h5>
         <p>Click on FILE RETURNS buttons on the side menu bar.</p>
-        <img src="images/FILE RETURN.png" alt=""></img>
+        <img src= {fileReturns} alt="file Reurns"/>
 
     <p>Click on UPLOAD MONTHLY WITHHOLDING TAX SCHEDULE on the upload/view page.</p>
-    <img src="images/WHT/Upload WHT.png" alt=""></img>
+    <img src= {uploadWht} alt="uploadwht"/>
      <ul>
        <li>Select period – this provides you with a dropdown with which you select month and year you intend to upload for.</li>
         <li>Choose csv file – Click on CHOOSE FILE to upload the file already entered correctly by the taxpayer.
@@ -23,7 +29,7 @@ const withHoldingTax = () => {
             This is to ensure taxpayers get the correct format to file in their Withholding Tax Schedule.</li>
         </ul>
         <p>After choosing the correct file, click on UPLOAD.</p>
-        <img src="images/WHT/upload monthly WHT page.PNG" alt=""></img>
+        <img src= {uploadMonthlywht} alt="uploadwht"/>
         
         <p>If all data entered are correct you should get a success message, if not, the system will throw up error message(s).</p>
          <h5>VIEW</h5>
@@ -31,9 +37,9 @@ const withHoldingTax = () => {
           To view monthly Withholding Tax Schedule uploaded, simply click on VIEW Withholding Tax Schedule
           schedule.
         </p>
-        <img src="images/WHT/view WHT.png" alt=""></img>
+        <img src= {viewWHT} alt="viewWHT"/>
         <p>Select year, month and click on SEARCH.</p>
-        <img src="images/WHT/WHT SEARCH.png" alt=""></img>
+        <img src= {whtSearch} alt="whtSearch"/>
 </div>
     </div>
     )

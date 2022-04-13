@@ -4,36 +4,28 @@ import Introduction from "./components/introduction";
 import Onboarding from './components/onboarding';
 import MonthlySchedule from './components/monthlySchedule';
 import PaymentOption from './components/PaymentOption';
-import withHoldingTax from './components/withHoldingTax';
+import WithHoldingTax from "./components/withHoldingTax";
 import AnnaulReturns from './components/AnnaulReturns';
 
 
 
-
-// import { useSelector } from 'react-redux';
-
-import {Redirect, BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 
 function App() {
   
   return (
-        <Router>
     <div className="App">
       <MainHeader/>
-      <div>
         <Menu/>
-        {/* <Introduction/> */}
-      </div>
-      <switch>
-      <Route path ='/' exact component = {Introduction}/>
-      <Route path = "/onboarding" component = {Onboarding}/>
-      <Route path = "/monthlySchedules" component = {MonthlySchedule}/>
-      <Route path = "/paymentOptions" component = {PaymentOption}/>
-      <Route path = "/withHoldingTax" component = {withHoldingTax}/>
-      <Route path = "/annualReturns" component = {AnnaulReturns}/>
-      </switch>
+      <Routes>
+      <Route path ="tax-payers-guide/" element = {<Introduction/>}/>
+      <Route path = "tax-payers-guide/onboarding"  element = {<Onboarding/>}/>
+      <Route path = "tax-payers-guide/monthlySchedules" element = {<MonthlySchedule/>}/>
+      <Route path = "tax-payers-guide/paymentOptions" element = {<PaymentOption/>}/>
+      <Route path = "tax-payers-guide/withHoldingTax" element = {<WithHoldingTax/>}/>
+      <Route path = "tax-payers-guide/annualReturns" element = {<AnnaulReturns/>}/>
+      </Routes>
     </div>
-      </Router>
   );
 }
 

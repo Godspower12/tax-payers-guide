@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Image1 from '../images/tax-manager.png';
 const Introduction = () => {
     return (
         <div>
@@ -29,12 +30,14 @@ const Introduction = () => {
         </p>
 
         <h5>APPLICATION STRUCTURE</h5>
+        
         <p>
           The diagram below provides a visual representation of the eTax portal. This is to help understand the
           activities that can be carried out on the portal.
         </p>
 
-        <img src="tax manager.png" alt="Tax manager"></img>
+        <img src={Image1} alt="Holla"></img>
+
 
         <h5>Chapters</h5>
         <p>
